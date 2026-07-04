@@ -13,8 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio",
-  description: "Personal portfolio site",
+  title: "Portfolio | QA Engineer / Engineering Manager",
+  description:
+    "QAエンジニア・エンジニアリングマネージャーのポートフォリオ。Playwright、AI for QA、QA for AI、品質プロセス改善の経験を紹介します。",
 };
 
 export default function RootLayout({
@@ -24,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="ja"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
