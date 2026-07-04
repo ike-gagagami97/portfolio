@@ -25,6 +25,34 @@ export const profile = {
   ],
 } as const;
 
+export type TechBlogArticle = {
+  title: string;
+  href: string;
+};
+
+export const techBlogArticles: readonly TechBlogArticle[] = [
+  {
+    title: "リリーステストの最適化～教科のハコで進めるテスト効率化",
+    href: "https://zenn.dev/atamaplus/articles/c522ee44835400",
+  },
+  {
+    title: "QAチームミッションのアップデート 〜進める上での工夫と学び〜",
+    href: "https://zenn.dev/atamaplus/articles/13982cc14247fb",
+  },
+  {
+    title: "QA主催！エンジニアとともに品質文化を育てるテスト勉強会の舞台裏",
+    href: "https://zenn.dev/atamaplus/articles/0ea2b9c5279d95",
+  },
+  {
+    title: "指標ドリブンで E2E テストを改善！実行時間半減・成功率 99%を達成するまで",
+    href: "https://zenn.dev/atamaplus/articles/48fb52b9bcf701",
+  },
+  {
+    title: "AIプロダクトのQA：変わったこと、変わらなかったこと",
+    href: "https://zenn.dev/atamaplus/articles/ef919329f4cc12",
+  },
+];
+
 export type ExperienceProject = {
   title: string;
   items: readonly string[];

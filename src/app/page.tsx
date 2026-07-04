@@ -1,4 +1,4 @@
-import { experiences, profile } from "@/data/profile";
+import { experiences, profile, techBlogArticles } from "@/data/profile";
 
 function SectionHeading({
   label,
@@ -74,6 +74,32 @@ export default function Home() {
                 <p key={paragraph}>{paragraph}</p>
               ))}
             </div>
+          </section>
+
+          <section aria-labelledby="tech-blog-heading" className="space-y-8">
+            <SectionHeading label="Tech Blog" title="執筆記事" />
+            <ul className="space-y-3">
+              {techBlogArticles.map((article) => (
+                <li key={article.href}>
+                  <a
+                    href={article.href}
+                    className="group flex items-start gap-3 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:border-sky-200 hover:bg-sky-50/50 sm:p-6"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span
+                      aria-hidden="true"
+                      className="mt-1 shrink-0 rounded-md bg-sky-100 px-2 py-0.5 text-xs font-medium text-sky-800"
+                    >
+                      Zenn
+                    </span>
+                    <span className="text-base font-medium leading-7 text-slate-900 group-hover:text-sky-800">
+                      {article.title}
+                    </span>
+                  </a>
+                </li>
+              ))}
+            </ul>
           </section>
 
           <section aria-labelledby="experience-heading" className="space-y-10">
