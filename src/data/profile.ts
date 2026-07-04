@@ -1,6 +1,14 @@
 export const profile = {
+  name: "池上 裕人",
+  nameReading: "いけがみ ひろと",
   role: "QA Engineer / Engineering Manager",
   tagline: "品質保証とエンジニアリング組織づくり",
+  socialLinks: [
+    {
+      label: "YOUTRUST",
+      href: "https://youtrust.jp/users/ikegagagami",
+    },
+  ],
   focusAreas: [
     "Playwright",
     "E2E テスト",

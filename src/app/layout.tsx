@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio | QA Engineer / Engineering Manager",
+  title: "池上 裕人 | QA Engineer / Engineering Manager",
   description:
-    "QAエンジニア・エンジニアリングマネージャーのポートフォリオ。Playwright、AI for QA、QA for AI、品質プロセス改善の経験を紹介します。",
+    "池上 裕人（いけがみ ひろと）のポートフォリオ。QAエンジニア・エンジニアリングマネージャーとして、Playwright、AI for QA、QA for AI、品質プロセス改善の経験を紹介します。",
 };
 
 export default function RootLayout({
